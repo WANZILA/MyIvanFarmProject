@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginTop="0dp"
+    android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+    tools:context=".ui.SaleAddFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/record_sale"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_heading"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_tag_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/tag_no"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_tag_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:inputType="number"
+                android:textSize="@dimen/content_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="311dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/name"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/image">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:fontFamily="@font/roboto"
+                android:textSize="@dimen/content_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/price"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="224dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/quantity"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_sold_by"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/sold_by"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_quantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_sold_by"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_sold_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/sold_to"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_sold_by">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_sold_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/elevatedButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_container"
+            android:hint="@string/record_sale"
+            android:text="@string/record_sale"
+            android:textSize="@dimen/content_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.386"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_sold_to"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <!--        android:padding="@dimen/contorl_padding"-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

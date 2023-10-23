@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dasboardNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="@string/title_dashboard" />
+    <item
+        android:id="@+id/workerNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_people_24"
+        android:title="@string/title_worker" />
+    <item
+        android:id="@+id/liveStockNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_home_work_24"
+        android:title="@string/title_livestock" />
+    <item
+        android:id="@+id/salesNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_point_of_sale_24"
+        android:title="@string/title_sales" />
+    <item
+        android:id="@+id/purchaseNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_exposure_24"
+        android:title="@string/title_purchase" />
+</menu>

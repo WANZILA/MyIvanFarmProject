@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/workerNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_people_24"
+        android:title="@string/title_worker" />
+    <item
+        android:id="@+id/workerViewNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_person_add_alt_1_24"
+        android:title="@string/workers_view" />
+    <item
+        android:id="@+id/salesNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_point_of_sale_24"
+        android:title="@string/title_sales" />
+    <item
+        android:id="@+id/purchaseNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_money_24"
+        android:title="@string/title_purchase" />
+
+
+</menu>

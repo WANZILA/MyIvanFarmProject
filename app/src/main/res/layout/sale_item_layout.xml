@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_tag_no"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/tag_no"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_tag_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/sold_to"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/price"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtf_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_quantity"
+                android:layout_width="@dimen/same_line_controls"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/quantity"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtf_price"
+                app:layout_constraintTop_toBottomOf="@+id/txtf_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_sold_by"
+                android:layout_width="@dimen/same_line_controls"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/sold_by"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtf_quantity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_sold_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">My Ivan Farm</string>
+    <string name="title_worker">Worker</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_livestock">Livestock</string>
+    <string name="title_login">User Login</string>
+    <string name="page_title">Ivan Farm</string>
+    <string name="worker_name">Wanzila Ronny</string>
+    <string name="content_description_media">Image of worker</string>
+    <string name="worker_age">45</string>
+    <string name="worker_title">Manager</string>
+    <string name="worker_view">View Workers</string>
+    <string name="worker_add">Add Worker</string>
+    <string name="workers_view">View Workers</string>
+    f_name
+
+    <!--    //worker-->
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="u_name">User Name</string>
+    <string name="title">Title</string>
+    <string name="phone">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+
+
+    <!--    LiveStock-->
+    <string name="name">Animal Name</string>
+    <string name="available">Available</string>
+    <string name="breed"> Breed</string>
+    <string name="live_stock_add">Add Live Stock</string>
+    <string name="tag_no"> Tag No</string>
+    <string name="type"> Type</string>
+    <string name="color"> Color</string>
+
+    <!--    Record sales-->
+    <string name="title_sales">Sales</string>
+    <string name="record_sale">Record Sales</string>
+    <string name="price"> Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="seller">Sold By</string>
+    <string name="buyer">Sold to</string>
+    <string name="item">Item</string>
+    <!--    <string name=""></string>-->
+
+    <!--    Purchases -->
+
+    <string name="title_purchase"> Purchase</string>
+    <string name="purchaser">Purchased by </string>
+    <string name="supplier">Supplier </string>
+    <string name="description">Description</string>
+    <string name="update_list">"Update List  "</string>
+    <string name="display_list">Display List</string>
+    <string name="sold_by">Sold By</string>
+    <string name="sold_to">Sold To</string>
+    <string name="sale_add">Add Sale</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to our farm</string>
+    <string name="a_type">Animal type</string>
+    <string name="weight">Weight</string>
+    <string name="add_livestock">Add LiveStock</string>
+</resources>

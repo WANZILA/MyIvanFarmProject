@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/md_theme_dark_onTertiaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/name"
+                android:padding="@dimen/contorl_padding"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_available"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/available"
+                android:padding="@dimen/contorl_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toBottomOf="@+id/txtf_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_breed"
+                android:layout_width="@dimen/same_line_controls"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/breed"
+                android:padding="@dimen/contorl_padding"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@id/image"
+                app:layout_constraintTop_toBottomOf="@id/txtf_available">
+                <!--        app:layout_constraintTop_toBottomOf="@+id/txtf_phone"-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_breed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtf_gender"
+                android:layout_width="@dimen/same_line_controls"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/contorl_margin"
+                android:hint="@string/gender"
+                android:padding="@dimen/contorl_padding"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtf_breed"
+                app:layout_constraintTop_toBottomOf="@id/txtf_available">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/elevatedButton"-->
+<!--        style="@style/Widget.Material3.Button.ElevatedButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="@dimen/margin_bottom_container"-->
+<!--        android:hint="@string/password"-->
+<!--        android:padding="@dimen/contorl_padding"-->
+<!--        android:text="@string/save"-->
+<!--        android:textSize="@dimen/content_text_size"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.502"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtf_gender"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

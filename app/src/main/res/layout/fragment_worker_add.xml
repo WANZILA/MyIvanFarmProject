@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_marginTop="0dp"
+    android:backgroundTint="@color/md_theme_dark_onSurfaceVariant"
+    tools:context=".ui.WorkerAddFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/worker_add"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_heading"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/f_name"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_f_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_l_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/l_name"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_f_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_l_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/title"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_l_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/phone"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_gender"
+            android:layout_width="@dimen/same_line_controls"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/gender"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_age"
+            android:layout_width="@dimen/same_line_controls"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/age"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtf_gender"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="TextView"-->
+<!--                tools:layout_editor_absoluteX="346dp"-->
+<!--                tools:layout_editor_absoluteY="505dp" />-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtf_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contorl_margin"
+            android:hint="@string/password"
+            android:padding="@dimen/contorl_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_age">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/elevatedButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_container"
+            android:hint="@string/password"
+            android:padding="@dimen/contorl_padding"
+            android:text="@string/save"
+            android:textSize="@dimen/content_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtf_password"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/workerAddNav"
+        android:name="ug.ac.myivanfarm.ui.WorkerAddFragment"
+        android:label="@string/worker_add"
+        tools:layout="@layout/fragment_worker_add" >
+        <action
+            android:id="@+id/action_workerAddNav_to_workerNav"
+            app:destination="@id/workerNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/workerViewNav"
+        android:name="ug.ac.myivanfarm.ui.WorkerViewFragment"
+        android:label="fragment_worker_view"
+        tools:layout="@layout/fragment_worker_view" />
+    <fragment
+        android:id="@+id/dasboardNav"
+        android:name="ug.ac.myivanfarm.ui.DasboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dasboard" >
+        <action
+            android:id="@+id/action_dasboardNav_to_liveStockNav"
+            app:destination="@id/liveStockNav" />
+        <action
+            android:id="@+id/action_dasboardNav_to_workerNav"
+            app:destination="@id/workerNav" />
+        <action
+            android:id="@+id/action_dasboardNav_to_purchaseNav"
+            app:destination="@id/purchaseNav" />
+        <action
+            android:id="@+id/action_dasboardNav_to_salesNav"
+            app:destination="@id/salesNav" />
+        <action
+            android:id="@+id/action_dasboardNav_to_saleAddFragment"
+            app:destination="@id/saleAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workerNav"
+        android:name="ug.ac.myivanfarm.ui.WorkerFragment"
+        android:label="@string/workers_view"
+        tools:layout="@layout/fragment_worker" >
+        <action
+            android:id="@+id/action_workerNav_to_workerAddNav"
+            app:destination="@id/workerAddNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/liveStockNav"
+        android:name="ug.ac.myivanfarm.ui.LiveStockFragment"
+        android:label="@string/title_livestock"
+        tools:layout="@layout/fragment_live_stock" >
+        <action
+            android:id="@+id/action_liveStockNav_to_liveStockAddFragment"
+            app:destination="@id/liveStockAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liveStockAddFragment"
+        android:name="ug.ac.myivanfarm.ui.LiveStockAddFragment"
+        android:label="@string/add_livestock"
+        tools:layout="@layout/fragment_live_stock_add">
+        <action
+            android:id="@+id/action_liveStockAddFragment_to_liveStockNav"
+            app:destination="@id/liveStockNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/salesNav"
+        android:name="ug.ac.myivanfarm.ui.SalesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales" >
+        <action
+            android:id="@+id/action_salesFragment_to_saleAddFragment"
+            app:destination="@id/saleAddFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_salesNav_to_dasboardNav"
+            app:destination="@id/dasboardNav"
+            app:popUpTo="@id/dasboardNav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/saleAddFragment"
+        android:name="ug.ac.myivanfarm.ui.SaleAddFragment"
+        android:label="@string/sale_add"
+        tools:layout="@layout/fragment_sale_add">
+        <action
+            android:id="@+id/action_saleAddFragment_to_salesNav"
+            app:destination="@id/salesNav"
+            app:popUpTo="@id/salesNav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseNav"
+        android:name="ug.ac.myivanfarm.ui.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" >
+        <action
+            android:id="@+id/action_purchaseNav_to_purchaseAddFragment"
+            app:destination="@id/purchaseAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseAddFragment"
+        android:name="ug.ac.myivanfarm.ui.PurchaseAddFragment"
+        android:label="fragment_purchase_add"
+        tools:layout="@layout/fragment_purchase_add" >
+        <action
+            android:id="@+id/action_purchaseAddFragment_to_purchaseNav"
+            app:destination="@id/purchaseNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ug.ac.myivanfarm.ui.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_dasboardNav"
+            app:destination="@id/dasboardNav" />
+        <action
+            android:id="@+id/action_loginFragment_to_userDashboardFragment"
+            app:destination="@id/userDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="ug.ac.myivanfarm.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDashboardFragment"
+        android:name="ug.ac.myivanfarm.ui.UserDashboardFragment"
+        android:label="fragment_user_dashboard"
+        tools:layout="@layout/fragment_user_dashboard" />
+</navigation>

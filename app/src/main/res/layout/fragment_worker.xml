@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".ui.WorkerFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/title_worker"
+        android:textSize="@dimen/title_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_update_list"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_marginBottom="@dimen/margin_bottom_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:padding="@dimen/contorl_padding"
+        android:text="@string/update_list"
+        android:textSize="@dimen/content_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        />
+
+    <Button
+        android:id="@+id/btn_display_list"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:padding="@dimen/contorl_padding"
+        android:text="@string/display_list"
+        android:textSize="@dimen/content_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        style="?attr/floatingActionButtonLargeStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="@dimen/fab_margin_top"
+        android:layout_marginEnd="@dimen/fab_margin_end"
+        android:padding="@dimen/contorl_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/baseline_add_circle_24" />
+<!--    android:layout_margin="@dimen/fab_margin"-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_list"
+        tools:listitem="@layout/worker_item_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
